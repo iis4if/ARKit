@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+<style>
+
+body{
+    background-color: #f5f5f7;
+}
+
+
+#arkit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    width: 180px;
+    height: 65px;
+    display:none;
+   
+}
+
+#ar {
+    max-width: 48%;
+    height: auto;
+    width: auto;
+    margin: auto;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    bottom: 0;
+    right: 0;    
+    
+}
+
+button {
+    background-color: #ffffff;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    color: #7D7D7D;
+    text-align: center;
+    font-size: 26px;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    padding-left: 51px;
+    padding-top: 7px;
+    padding-right: 18px;
+    padding-bottom: 7px;
+}
+
+.icon{
+    width: 42px;
+    margin-left: -39px;
+    padding-right: 8px;
+    margin-bottom: -9px;
+}
+
+</style>
+</head>
+<body>
+
+<button onclick="arkit()"><img class="icon" src="icon.png">ARKit View</button>
+
+<img id="arkit" src= "hi" data-ar-fp="flex.usdz" >
+
+<img id="ar" src="icon.png" data-ar-fp="flex.usdz" >
+
+
+<script>
+function arkit() {
+document.querySelector('#arkit').click();
+}
+</script>
+
+    </body>
+    
+    </html>
